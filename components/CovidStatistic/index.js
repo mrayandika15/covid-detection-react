@@ -144,7 +144,9 @@ const CovidStatistic = ({ resource }) => {
             onInput={(e) => setSearch(e.target.value)}
             onKeyDown={handleKeyDown}
           ></Input>
-          <InputRightAddon children={<BsSearch />} />
+          <InputRightAddon>
+            <BsSearch />
+          </InputRightAddon>
         </InputGroup>
       </Flex>
 
