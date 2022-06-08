@@ -59,6 +59,7 @@ const Pagination = (props) => {
             size="sm"
             onClick={() => onPageChange(pageNumber)}
             isActive={pageNumber === currentPage}
+            key={pageNumber}
           >
             {pageNumber}
           </Button>
