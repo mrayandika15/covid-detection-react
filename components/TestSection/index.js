@@ -7,7 +7,7 @@ import { IoClipboardOutline } from "react-icons/io5";
 
 import { dataAnswer } from "./DataAnswer";
 import { ResultAnswer } from "./ResultAnswer";
-import { WelcomeModal } from "./welcomeModal";
+import { WelcomeModal } from "./WelcomeModal";
 
 import { database } from "../../services/firebase";
 import { collection, addDoc } from "firebase/firestore";
