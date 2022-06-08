@@ -5,6 +5,7 @@ import * as React from "react";
 import Router from "next/router";
 import NProgress from "nprogress";
 import "../styles/nprogress.css";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   React.useEffect(() => {
@@ -25,6 +26,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider theme={themes}>
+      <Head>
+        <title>Covid 19 Diagnostic</title>
+      </Head>
+
       <Component {...pageProps} />
     </ChakraProvider>
   );
